@@ -1,7 +1,6 @@
-.first
+.myerror
 {
-    color:red;
-    background-color:blue;
-    line-height: 50px;
-    padding: 20px;
+    background-color: red;
+    font-size: 150px;
+    text-align: center;
 }
