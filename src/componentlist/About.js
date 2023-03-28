@@ -1,8 +1,12 @@
 import React from 'react'
+import { Abc } from './Contactus'
 
 function About() {
   return (
-    <div>About</div>
+    <div>About
+      <Abc/>
+    </div>
+
   )
 }
 

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './componentlist/About';
 import Contactus from './componentlist/Contactus';
+import Datalist from './componentlist/Datalist';
 import Errorpage from './componentlist/Errorpage';
 import Landingpage from './componentlist/Landingpage';
 import Mynav from './componentlist/Mynav';
@@ -21,6 +22,7 @@ root.render(
            <Route path='about' element={<About/>}/>
            <Route path='contact' element={<Contactus/>}/>
            <Route path='*' element={<Errorpage/>}/>
+           <Route path='datalist' element={<Datalist/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>
