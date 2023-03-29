@@ -6,6 +6,7 @@ import Contactus from './componentlist/Contactus';
 import Datalist from './componentlist/Datalist';
 import Errorpage from './componentlist/Errorpage';
 import Landingpage from './componentlist/Landingpage';
+import Myaxiosdatalist from './componentlist/Myaxiosdatalist';
 import Mynav from './componentlist/Mynav';
 
 
@@ -23,6 +24,7 @@ root.render(
            <Route path='contact' element={<Contactus/>}/>
            <Route path='*' element={<Errorpage/>}/>
            <Route path='datalist' element={<Datalist/>}/>
+           <Route path='myapidata' element={<Myaxiosdatalist/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>

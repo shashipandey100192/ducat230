@@ -5,42 +5,56 @@ import abc from "../pictures/img5.jpg";
 function Datalist() {
 const mydata = [
     {
+        ids:1,
         name:'picname1',
         url:'https://wallpapers.com/images/featured/hd-a5u9zq0a0ymy2dug.jpg',
         title:'pppppppppppppppp',
         pragraph:'uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuu uuuuuuuuuuuu u'
     },
     {
+        ids:2,
         name:'picname1',
         url:'https://wallpapers.com/images/featured/hd-a5u9zq0a0ymy2dug.jpg',
         title:'pppppppppppppppp',
         pragraph:'uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuu uuuuuuuuuuuu u'
     },
     {
+        ids:3,
         name:'picname1',
         url:'https://wallpapers.com/images/featured/hd-a5u9zq0a0ymy2dug.jpg',
         title:'pppppppppppppppp',
         pragraph:'uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuu uuuuuuuuuuuu u'
     },
     {
+        ids:4,
         name:'picname1',
         url:'https://wallpapers.com/images/featured/hd-a5u9zq0a0ymy2dug.jpg',
         title:'pppppppppppppppp',
         pragraph:'uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuu uuuuuuuuuuuu u'
     },
     {
+        ids:5,
         name:'picname1',
         url:'https://wallpapers.com/images/featured/hd-a5u9zq0a0ymy2dug.jpg',
         title:'pppppppppppppppp',
         pragraph:'uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuu uuuuuuuuuuuu u'
     },
     {
+        ids:6,
+        name:'picname1',
+        url:'image/img3.jpg',
+        title:'pppppppppppppppp',
+        pragraph:'uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuu uuuuuuuuuuuu u'
+    },
+    {
+        ids:7,
         name:'picname1',
         url:'https://wallpapers.com/images/featured/hd-a5u9zq0a0ymy2dug.jpg',
         title:'pppppppppppppppp',
         pragraph:'uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuu uuuuuuuuuuuu u'
     },
     {
+        ids:8,
         name:'picname1',
         url:'https://wallpapers.com/images/featured/hd-a5u9zq0a0ymy2dug.jpg',
         title:'pppppppppppppppp',
@@ -56,39 +70,23 @@ const myimg = "https://wallup.net/wp-content/uploads/2017/11/23/523619-New_Zeala
 return (
     <div className='container-fluid'>
         <div className='row'>
-            <div className='col-md-3'>
-            <div className="card">
-                <img src="image/img3.jpg" alt="noimage" />
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link to="#" className="btn btn-primary">Go somewhere</Link>
-                </div>
-                </div>
+            {mydata.map((u)=>{
+                return(
+                    <div className='col-md-3'>
+                    <div className="card">
+                        <img src={u.url} alt="noimage" />
+                        <div className="card-body">
+                            <h5 className="card-title">{u.title}</h5>
+                            <p className="card-text">{u.pragraph}</p>
+                            <Link to="#" className="btn btn-primary">{u.name} {u.ids}</Link>
+                        </div>
+                        </div>
+                    </div>
+                )
+            })}  
 
-            </div>
-
-            <div className='col-md-3'>
-            <div className="card">
-                <img src={abc} alt="noimage" />
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link to="#" className="btn btn-primary">Go somewhere</Link>
-                </div>
-                </div>
-            </div>
-
-            <div className='col-md-3'>
-            <div className="card">
-                <img src={myimg} alt="noimage" />
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link to="#" className="btn btn-primary">Go somewhere</Link>
-                </div>
-                </div>
-            </div>
+           
+            
         </div>
     </div>
   )
