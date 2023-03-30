@@ -39,6 +39,9 @@ function Mynav() {
           <li className="nav-item">
             <Link className="nav-link" to="myapidata">axios api</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="graph">react chart</Link>
+          </li>
         </ul>
         <form className="d-flex" role="search">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
