@@ -10,6 +10,7 @@ import Myaxiosdatalist from './componentlist/Myaxiosdatalist';
 import Mycharts from './componentlist/Mychart';
 import Mynav from './componentlist/Mynav';
 import Detailspage from './componentlist/Detailspage';
+import Mybootstrapform from './componentlist/Mybootstrapform';
 
 
 
@@ -29,6 +30,7 @@ root.render(
            <Route path='myapidata' element={<Myaxiosdatalist/>}/>
            <Route path='myapidata/:id' element={<Detailspage/>}/>
            <Route path='graph' element={<Mycharts/>}/>
+           <Route path="myform" element={<Mybootstrapform/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>
