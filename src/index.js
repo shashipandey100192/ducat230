@@ -11,6 +11,7 @@ import Mycharts from './componentlist/Mychart';
 import Mynav from './componentlist/Mynav';
 import Detailspage from './componentlist/Detailspage';
 import Mybootstrapform from './componentlist/Mybootstrapform';
+import Myparents from './componentlist/Myparents';
 
 
 
@@ -31,6 +32,7 @@ root.render(
            <Route path='myapidata/:id' element={<Detailspage/>}/>
            <Route path='graph' element={<Mycharts/>}/>
            <Route path="myform" element={<Mybootstrapform/>}/>
+           <Route path="myprops" element={<Myparents/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -23,7 +23,7 @@ function Mybootstrapform() {
             </div>
             <div className='col-md-6 mt-3'>
                 <label className="form-label">Phone No</label>
-                <input type="text" className="form-control" {...register("phone",{ required: true })}/>
+                <input type="text" className="form-control" {...register("phone",{ required: true })} pattern='[0-9]{10}'/>
                 {errors.phone && <span className='text-danger'>This field is required</span>}
             </div>
             <div className='col-md-6 mt-3'>

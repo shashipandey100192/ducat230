@@ -22,6 +22,7 @@ function Mynav() {
           <li className="nav-item">
             <Link className="nav-link" to="contact">Contact</Link>
           </li>
+          
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
@@ -44,6 +45,9 @@ function Mynav() {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="myform">form</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="myprops">props features</Link>
           </li>
         </ul>
         <form className="d-flex" role="search">
