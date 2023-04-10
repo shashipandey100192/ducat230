@@ -15,12 +15,16 @@ import Myparents from './componentlist/Myparents';
 import { Auth0Provider } from '@auth0/auth0-react';
 import Myauthloginpage from './componentlist/Myauthlogin';
 import MysHooks from './componentlist/MysHooks';
+import { Provider } from 'react-redux';
+import { store } from './redux/mystore';
+import { Myreduxtemplates } from './redux/Mytemplate';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
  <Auth0Provider  
     domain="dev-2lztdozl12hbrfpe.us.auth0.com"
     clientId="yX16UCL8NWJ3WbEbMMBUDw4cglKkJysw"
@@ -42,8 +46,10 @@ root.render(
            <Route path="myform" element={<Mybootstrapform/>}/>
            <Route path="myprops" element={<Myparents/>}/>
            <Route path="myhook" element={<MysHooks/>}/>
+           <Route path="myredux" element={<Myreduxtemplates/>}/>
         </Routes>
     </BrowserRouter>
     </Auth0Provider>
+    </Provider>
   </React.StrictMode>
 );

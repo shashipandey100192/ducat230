@@ -49,6 +49,9 @@ function Mynav() {
           <li className="nav-item">
             <Link className="nav-link" to="myprops">props features</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="myredux">redux</Link>
+          </li>
         </ul>
         <form className="d-flex" role="search">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
